@@ -13,7 +13,6 @@ App.use(function(req, res, next) {
      });
 
 
-
 const userRouter=require('./ROUTE/userRoute')
 App.use('/user',userRouter)
 
@@ -33,7 +32,6 @@ mongoose.connect("mongodb+srv://Ariadna:1q2w3e4r@ariadna.bpwcgwy.mongodb.net/"
        console.log("connect to mongo!")
 })
  
-
 
 
 App.listen(3030,()=>{

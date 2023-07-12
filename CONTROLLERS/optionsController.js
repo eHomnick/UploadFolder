@@ -56,9 +56,8 @@ const UpdateOptionByName = (req, res) => {
         res.send('error :' + error)
     })
 }
-//להוסיף
-// populate('cooperate') 
-//שליפת כל האופציות
+
+ 
 const getAllOption = (req, res) => {
     optionsModel.find().populate('Cooperate').then((option) => {
         res.json({ option: option })
